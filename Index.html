@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Steve Jobs - Front-end Developer Portfolio</title>
+  <meta
+    name="description"
+    content="Steve jobs is a front-end developer who builds clean, accessible, working interfaces."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#hero" aria-label="Steve Jobs home">
+        Steve Jobs
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div
+        class="slideshow"
+        id="slideshow"
+        aria-label="Featured work slideshow"
+      >
+        <img
+          src="images/slide1.jpg"
+          alt="Featured front-end development work"
+          id="slide-image"
+          class="slide-image"
+          width="800"
+          height="320"
+        >
+
+        <div class="slideshow-controls" aria-label="Slideshow controls">
+          <button
+            id="prev-btn"
+            class="slide-btn"
+            type="button"
+            aria-label="Show previous slide"
+          >
+            Prev
+          </button>
+
+          <button
+            id="play-pause-btn"
+            class="slide-btn"
+            type="button"
+            aria-label="Pause slideshow"
+            aria-pressed="false"
+          >
+            Pause
+          </button>
+
+          <button
+            id="next-btn"
+            class="slide-btn"
+            type="button"
+            aria-label="Show next slide"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="eyebrow">Front-end development</p>
+        <h1 id="hero-heading">I build clean, working interfaces.</h1>
+        <p>
+          I turn thoughtful designs into accessible, responsive web experiences
+          from the ground up.
+        </p>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+
+      <p class="bio-text">
+        I'm a front-end developer who enjoys turning clean designs into
+        working pages.
+        <span id="bio-more" class="bio-more">
+          I've spent the last few years focused on JavaScript, accessibility,
+          and building small tools that make everyday tasks easier for the
+          people using them.
+        </span>
+      </p>
+
+    </section>
+
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <img
+            src="images/project1.jpg"
+            data-hover="images/project1-hover.jpg"
+            alt="Landing Page Redesign project preview"
+            class="project-image"
+            width="600"
+            height="400"
+          >
+
+          <div class="project-content">
+            <h3>Landing Page Redesign</h3>
+            <p>
+              A rebuilt marketing page with a cleaner layout and improved
+              visual hierarchy.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="images/project2.jpg"
+            data-hover="images/project2-hover.jpg"
+            alt="Task Tracker project preview"
+            class="project-image"
+            width="600"
+            height="400"
+          >
+
+          <div class="project-content">
+            <h3>Task Tracker</h3>
+            <p>
+              A to-do list with filtering, simple styling, and an easy-to-use
+              interface.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img
+            src="images/project3.jpg"
+            data-hover="images/project3-hover.jpg"
+            alt="Recipe Finder project preview"
+            class="project-image"
+            width="600"
+            height="400"
+          >
+
+          <div class="project-content">
+            <h3>Recipe Finder</h3>
+            <p>
+              A searchable collection of recipe cards designed for quick and
+              simple browsing.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Steve Jobs. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
